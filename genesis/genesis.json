@@ -1,0 +1,72 @@
+{
+  "chainId": "qcoin-nexus-1",
+  "networkName": "QCoin Nexus Mainnet",
+  "genesisTime": "2026-08-23T16:25:00Z",
+  "operator": "Esslinger Consulting / digitaldesignerjazz",
+  "description": "Genesis block of the QCoin chain – economic layer for Avalon peers and Nexus mesh",
+
+  "consensus": {
+    "type": "nexus-avalon",
+    "notes": "Coordinated via Avalon Protocol Rounds and Yggdrasil mesh"
+  },
+
+  "token": {
+    "name": "QCoin",
+    "symbol": "QCN",
+    "decimals": 18,
+    "totalSupply": "1000000000000000000000000000",
+    "initialDistribution": {
+      "genesisAllocation": "210000000000000000000000000",
+      "meshRewardsPool": "300000000000000000000000000",
+      "agentReputationPool": "200000000000000000000000000",
+      "ecosystemDevelopment": "150000000000000000000000000",
+      "reserve": "140000000000000000000000000"
+    }
+  },
+
+  "avalonIntegration": {
+    "peerCount": 47,
+    "hannoverNodes": [
+      "Avalon-Hannover-Nord",
+      "Avalon-Hannover-Sued",
+      "Avalon-Hannover-West",
+      "Avalon-Hannover-Ost"
+    ],
+    "protocol": "Avalon Protocol Round",
+    "meshUnderlay": "Yggdrasil"
+  },
+
+  "genesisAccounts": [
+    {
+      "name": "Genesis Operator",
+      "role": "chain-initiator",
+      "allocation": "210000000000000000000000000",
+      "notes": "Initial allocation controlled by Operator"
+    },
+    {
+      "name": "Mesh Rewards Pool",
+      "role": "network-incentives",
+      "allocation": "300000000000000000000000000"
+    },
+    {
+      "name": "Agent Reputation Pool",
+      "role": "peer-and-agent-rewards",
+      "allocation": "200000000000000000000000000"
+    }
+  ],
+
+  "parameters": {
+    "blockTimeTarget": "Avalon Protocol Round synchronized",
+    "minPeerParticipation": 47,
+    "yggdrasilRequired": true
+  },
+
+  "metadata": {
+    "created": "2026-08-23",
+    "version": "0.1.0-genesis",
+    "linkedRepos": [
+      "https://github.com/digitaldesignerjazz/avalon",
+      "https://github.com/digitaldesignerjazz/luminaos"
+    ]
+  }
+}
